@@ -184,6 +184,17 @@ def test(update, context):
 
 
 @run_async
+def donate(bot: Bot, update: Update):
+    user = update.effective_message.from_user
+    chat = update.effective_chat  # type: Optional[Chat]
+
+    if chat.type == "private":
+        keyboard = [[InlineKeyboardButton(text="Paytm",url="https://paytm.me/d-tXs3H"),InlineKeyboardButton(text="PayPal",url="http://Paypal.me/MrSammy07")]]
+        keyboard += [[InlineKeyboardButton(text="For Other modes",url="https://t.me/MrSemmy")]]
+        update.effective_message.reply_text(DONATE_STRING,  reply_markup=InlineKeyboardMarkup(keyboard),parse_mode=ParseMode.MARKDOWN)
+
+        
+@run_async
 def start(update: Update, context: CallbackContext):
     args = context.args
     uptime = get_readable_time((time.time() - StartTime))
