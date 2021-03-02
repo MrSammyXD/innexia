@@ -183,15 +183,8 @@ def test(update, context):
     print(update.effective_message)
 
 
-@run_async
-def donate(update: context):
-    user = update.effective_message.from_user
-    chat = update.effective_chat  # type: Optional[Chat]
 
-    if chat.type == "private":
-        keyboard = [[InlineKeyboardButton(text="Paytm",url="https://paytm.me/d-tXs3H"),InlineKeyboardButton(text="PayPal",url="http://Paypal.me/MrSammy07")]]
-        keyboard += [[InlineKeyboardButton(text="For Other modes",url="https://t.me/MrSemmy")]]
-        update.effective_message.reply_text(DONATE_STRING,  reply_markup=InlineKeyboardMarkup(keyboard),parse_mode=ParseMode.MARKDOWN)
+
 
         
 @run_async
