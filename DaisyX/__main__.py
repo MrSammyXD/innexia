@@ -184,7 +184,7 @@ def test(update, context):
 
 
 @run_async
-def donate(update: update, context):
+def donate(update: context):
     user = update.effective_message.from_user
     chat = update.effective_chat  # type: Optional[Chat]
 
