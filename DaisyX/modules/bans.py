@@ -94,25 +94,31 @@ def ban(update: Update, context: CallbackContext) -> str:
             return log_message
 
     log = (
-        f"<b>{html.escape(chat.title)}:</b>\n"
-        f"#BANNED\n"
-        f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-        f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+        "<b>{}:</b>"
+        "\n#TEMP BANNED"
+        "\n<b>Admin:</b> {}"
+        "\n<b>User:</b> {} (<code>{}</code>)"
+        "\n<b>Time:</b> {}".format(
+            html.escape(chat.title),
+            mention_html(user.id, user.first_name),
+            mention_html(member.user.id, member.user.first_name),
+            member.user.id,
+            time_val,
+        )
     )
     if reason:
         log += "\n<b>Reason:</b> {}".format(reason)
 
     try:
-        chat.kick_member(user_id)
-        # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
-        reply = (
-            f"<code>❕</code><b>Ban Event</b>\n"
-            f"<code> </code><b>•  User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
-        )
-        if reason:
-            reply += f"\n<code> </code><b>•  Reason:</b> \n{html.escape(reason)}"
-        bot.sendMessage(chat.id, reply, parse_mode=ParseMode.HTML, quote=False)
-        return log
+        chat.kick_member(user_id, until_date=bantime)
+        
+        message.reply_text("Admin {} has successfully banned {} in <b>{}</b> for {}!".format(
+                mention_html(user.id, user.first_name),
+                mention_html(member.user.id, member.user.first_name),
+                html.escape(chat.title), time_val),
+                               quote=False,
+                               parse_mode=ParseMode.HTML)
+       return log       
 
     except BadRequest as excp:
         if excp.message == "Reply message not found":
