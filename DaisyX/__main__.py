@@ -63,7 +63,7 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello There, I'm [innexia](https://telegra.ph/file/fa69dee1cfa510315eb4f.jpg)
+Hello There, I'm [innexia](https://telegra.ph/file/e13e74b3fd18cff3ca4c1.jpg)
 
 An Advanced Telegram Group Management Bot For All Your Needs !!
 
@@ -521,7 +521,7 @@ def get_help(update, context):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help",
+                                text="❗ Help ❗",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -532,18 +532,18 @@ def get_help(update, context):
             )
             return
         update.effective_message.reply_text(
-            "Contact me in PM to get the list of possible commands.",
+            "🔥 Contact Me in PM For Help!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="❗ Help ❗",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Support Chat",
+                            text="💠 Support 💠",
                             url="https://t.me/{}".format(SUPPORT_CHAT),
                         )
                     ],
