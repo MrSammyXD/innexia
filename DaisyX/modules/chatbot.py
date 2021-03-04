@@ -45,7 +45,7 @@ def add_chat(update: Update, context: CallbackContext):
         ses_id = str(ses.id)
         expires = str(ses.expires)
         sql.set_ses(chat.id, ses_id, expires)
-        msg.reply_text("AI successfully enabled for this chat!")
+        msg.reply_text("💞 Auto Chat Successfully Enable!")
         message = (
             f"<b>{html.escape(chat.title)}:</b>\n"
             f"#AI_ENABLED\n"
@@ -53,7 +53,7 @@ def add_chat(update: Update, context: CallbackContext):
         )
         return message
     else:
-        msg.reply_text("AI is already enabled for this chat!")
+        msg.reply_text("😺 Chat Already Enable!")
         return ""
 
 
@@ -152,7 +152,7 @@ Chatbot utilizes the CoffeeHouse API and allows Senku to talk and provides a mor
  ✪ `/rmchat`*:* Disables Chatbot mode in the chat.
 
 Reports bugs at @{SUPPORT_CHAT}
-[Powered by CoffeeHouse](https://coffeehouse.intellivoid.net) from @Intellivoid
+Powered By 💞 @InnexiaSupport
 """
 
 ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat)
