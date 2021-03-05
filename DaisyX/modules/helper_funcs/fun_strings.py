@@ -546,6 +546,11 @@ HUG = ("hugs", "hugged", "kissed", "pinches")
 
 # Table strings credits: @DaisyX
 
+INNEXIA= (
+    "(╯°□°）╯彡 ┻━┻",
+    "👋 Heya Baby Here I Am Nothing 😔 Without You!",
+)
+
 TABLE = (
     "(╯°□°）╯彡 ┻━┻",
     "I ran out of tables, will order more.",
