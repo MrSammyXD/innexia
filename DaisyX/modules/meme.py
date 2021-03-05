@@ -562,7 +562,7 @@ GDMORNING_HANDLER = DisableAbleMessageHandler(
     friendly="goodmorning",
 )
 BAKWAS_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"(?i)(innexia|innexia bot)"), innexia, friendly="innexia"
+    Filters.regex(r"(?i)(innexia|innexia)"), innexia, friendly="innexia"
 )
 
 
