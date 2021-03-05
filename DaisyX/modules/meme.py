@@ -570,13 +570,13 @@ GDMORNING_HANDLER = DisableAbleMessageHandler(
     goodmorning,
     friendly="goodmorning",
 )
-GDNIGHT_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"(?i)(goodnight|good night)"), goodnight, friendly="goodnight"
-)
 INNEXIA_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"(?i)(innexia|😔Heya I Am Nothing Without You)"),
-    innexia,
-    friendly="innexia",
+    Filters.regex(r"(?i)(innexia|😔Heya I Am Nothing Without You)"), innexia, friendly="innexia"
+)
+GDNIGHT_HANDLER = DisableAbleMessageHandler(
+    Filters.regex(r"(?i)(goodnight|good night)"),
+    goodnight,
+    friendly="goodnight",
 )
 
 
