@@ -483,6 +483,15 @@ def goodnight(update, context):
 
 @run_async
 @typing_action
+def innexia(update, context):
+    message = update.effective_messege
+    first_name = update.effective_user.first_name
+    reply = f"😔 Heya I Am Nothing Without You Baby! {escape_markdown(first_name)}"
+    message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
+    
+    
+@run_async
+@typing_action
 def goodmorning(update, context):
     message = update.effective_message
     first_name = update.effective_user.first_name
