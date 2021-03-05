@@ -546,7 +546,7 @@ HUG = ("hugs", "hugged", "kissed", "pinches")
 
 # Table strings credits: @DaisyX
 
-INNEXIA= (
+INNEXIA = (
     "(╯°□°）╯彡 ┻━┻",
     "👋 Heya Baby Here I Am Nothing 😔 Without You!",
 )
