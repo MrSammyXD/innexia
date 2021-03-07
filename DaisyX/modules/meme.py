@@ -474,10 +474,10 @@ def stretch(update, context):
 
 @run_async
 @typing_action
-def innexia(update, context):
+def goodnight(update, context):
     message = update.effective_message
     first_name = update.effective_user.first_name
-    reply = f"Heya I Am Nothing Without You! {escape_markdown(first_name)}"
+    reply = f"Good Night💤! {escape_markdown(first_name)}"
     message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
 
 
@@ -486,7 +486,7 @@ def innexia(update, context):
 def goodmorning(update, context):
     message = update.effective_message
     first_name = update.effective_user.first_name
-    reply = f"Good Morning! {escape_markdown(first_name)}"
+    reply = f"Good Morning🌞! {escape_markdown(first_name)}"
     message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
 
 
@@ -561,8 +561,8 @@ GDMORNING_HANDLER = DisableAbleMessageHandler(
     goodmorning,
     friendly="goodmorning",
 )
-BAKWAS_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"(?i)(innexia|innexia)"), innexia, friendly="innexia"
+GDNIGHT_HANDLER = DisableAbleMessageHandler(
+    Filters.regex(r"(?i)(goodnight|good night)"), goodnight, friendly="goodnight"
 )
 
 
@@ -589,4 +589,4 @@ dispatcher.add_handler(STRECH_HANDLER)
 dispatcher.add_handler(DICE_HANDLER)
 dispatcher.add_handler(YESNOWTF_HANDLER)
 dispatcher.add_handler(GDMORNING_HANDLER)
-dispatcher.add_handler(BAKWAS_HANDLER)
+dispatcher.add_handler(GDNIGHT_HANDLER)
