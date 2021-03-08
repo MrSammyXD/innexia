@@ -97,7 +97,7 @@ def warn(
             reply = (
                 f"<code>❕</code><b>Banned Event</b>\n"
                 f"<code> </code><b>👮  Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-                f"<code> </code><b>👤  User:</b> {mention_html(user.id, user.first_name)}\n"
+                f"<code> </code><b>👤  User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
                 f"<code> </code><b>📟  Count:</b> {limit}"
             )
 
