@@ -95,9 +95,10 @@ def warn(
         else:  # ban
             chat.kick_member(user.id)
             reply = (
-                f"<code>❕</code><b>Ban Event</b>\n"
-                f"<code> </code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
-                f"<code> </code><b>•  Count:</b> {limit}"
+                f"<code>❕</code><b>Banned Event</b>\n"
+                f"<code> </code><b>👮  Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+                f"<code> </code><b>👤  User:</b> {mention_html(user.id, user.first_name)}\n"
+                f"<code> </code><b>📟  Count:</b> {limit}"
             )
 
         for warn_reason in reasons:
