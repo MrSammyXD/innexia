@@ -80,7 +80,7 @@ def ping(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        "ᎮᎧᏁᎶ\n"
+        "꧁ ק¤ñğ! ꧂\n"
         "<b>ᎮᎧᏁᎶ ᏖᎥᎷᏋ</b> <code>{}</code>\n"
         "<b>ᏰᎧᏖ  ͞U͞ᎮᏖᎥᎷᏋ</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML,
@@ -98,7 +98,7 @@ def ding(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
 
     messageX.edit_text(
-        "ᗫ𐒀𐒐Ꮆ\n"
+        "꧁ ᗫ⊕ηg! ꧂\n"
         "<b>ᗫ𐒀𐒐Ꮆ Ꮦ𐒃𐒄Ꮛ</b> <code>{}</code>\n"
         "<b>ᏰᎧᏖ  ͞U͞ᎮᏖᎥᎷᏋ</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML,
