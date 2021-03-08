@@ -95,7 +95,7 @@ def ban(update: Update, context: CallbackContext) -> str:
 
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
-        f"#BANNED\n"
+        f"A USER BANNED SUCCESSFULLY\n"
         f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
         f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
     )
@@ -106,8 +106,9 @@ def ban(update: Update, context: CallbackContext) -> str:
         chat.kick_member(user_id)
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         reply = (
-            f"<code>❕</code><b>Ban Event</b>\n"
-            f"<code> </code><b>•  User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+            f"<code>❕</code><b>A USER BANNED SUCCESSFULLY</b>\n"
+            f"<code> </code><b>👮 {mention_html(user.id, html.escape(user.first_name))}\n"
+            f"<code> </code><b>👤 User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
             reply += f"\n<code> </code><b>•  Reason:</b> \n{html.escape(reason)}"
