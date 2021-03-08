@@ -73,6 +73,8 @@ An Advanced Telegram Group Management Bot For All Your Needs !!
 buttons = [
     [
         InlineKeyboardButton(text="Help", callback_data="help_back"),
+        InlineKeyboardButton(
+            text="Support", url="t.me/InnexiaSupport"
     ],
     [
         InlineKeyboardButton(
