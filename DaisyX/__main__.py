@@ -63,7 +63,7 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello There, I'm [innexia](https://telegra.ph/file/e13e74b3fd18cff3ca4c1.jpg)
+Hello There, I'm [innexia](https://telegra.ph/file/d0e2aaa2a7acc18397879.jpg)
 
 An Advanced Telegram Group Management Bot For All Your Needs !!
 """
@@ -84,23 +84,14 @@ buttons = [
 
 
 HELP_STRINGS = f"""
-*Innexia Command*
-✪ /start: Starts me! You've probably already used this.
-✪ /help: Click this, I'll let you know about myself!
-✪ /donate: You can support my creater using this command.
-✪ /settings: 
-   ◔ in PM: will send you your settings for all supported modules.
-   ◔ in a Group: will redirect you to pm, with all that chat's settings.
-   @InnexiaSupport
-""".format(
+*SETTINGS*
+✪ Select one of the settings that you want to change!
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
 
-DONATE_STRING = """Thanks for showing interest in my works
-To donate you can send any amount you wish to using the following
-*Payment Options:* UPI `MrSammy07@ybl` (Long pres to copy)"""
+DONATE_STRING = """Hey 👋 u can make a donation to innexia bot join us @InnexiaDonate !"""
 
 
 IMPORTED = {}
