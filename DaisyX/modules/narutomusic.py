@@ -111,7 +111,7 @@ async def download_video(v_url):
     c_time = time.time()
     if song:
         await rkp.edit(
-            f"`Preparing to upload song:`\
+            f"`😬 Finding Your Favourite song!`\
         \n**{rip_data['title']}**\
         \nby *{rip_data['uploader']}*"
         )
@@ -270,4 +270,4 @@ __help__ = """
  ➩ /vsong <songname artist(optional)>: uploads the video song in it's best quality available
 """
 
-__mod_name__ = "Songs 🎸"
+__mod_name__ = "Songs"
