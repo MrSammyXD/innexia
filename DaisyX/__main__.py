@@ -73,14 +73,14 @@ An Advanced Telegram Group Management Bot For All Your Needs !!
 buttons = [
     
     [                    
-        InlineKeyboardButton(text="👤 INFO 👤", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="Support", url="t.me/InnexiaSupport"
     ],
     [
-        InlineKeyboardButton(text="❓ COMMANDS ❓", callback_data="help_back"),
+        InlineKeyboardButton(text="Help", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="👥 ADD TO GROUP 👥", url="t.me/Innexiabot?startgroup=true"
+            text="Add Me", url="t.me/Innexiabot?startgroup=true"
         ),
     ],
 ]
@@ -94,6 +94,7 @@ HELP_STRINGS = f"""
 ✪ /settings: 
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
+   @InnexiaSupport
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
