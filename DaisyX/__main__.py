@@ -86,7 +86,7 @@ buttons = [
 
 
 HELP_STRINGS = f"""
-*Innexia Command* [🤖](https://telegra.ph/file/fa69dee1cfa510315eb4f.jpg)
+*Innexia Command*
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
