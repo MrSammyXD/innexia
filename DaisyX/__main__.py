@@ -66,9 +66,9 @@ PM_START_TEXT = """
 Hello There, I'm [innexia](https://telegra.ph/file/e13e74b3fd18cff3ca4c1.jpg)
 
 An Advanced Telegram Group Management Bot For All Your Needs !!
-
-✪ Make sure you read *INFO* Section Below ✪ 
 """
+
+
 
 buttons = [
     
