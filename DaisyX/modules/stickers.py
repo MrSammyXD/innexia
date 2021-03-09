@@ -458,13 +458,11 @@ __help__ = """
 • `/stickers`*:* Find stickers for given term on combot sticker catalogue
 
 *BLACKLIST STICKERS -
-
-Blacklist sticker is used to stop certain stickers. Whenever a sticker is sent, the message will be deleted immediately.
 *NOTE:* Blacklist stickers do not affect the group admin
  • `/blsticker`*:* See current blacklisted sticker
 *Only admin:*
  • `/addblsticker <sticker link>`*:* Add the sticker trigger to the black list. Can be added via reply sticker
- • `/unblsticker <sticker link>`*:* Remove triggers from blacklist. The same newline logic applies here, so you can delete multiple triggers at once
+ • `/unblsticker <sticker link>`*:* Remove triggers from blacklist.
  • `/rmblsticker <sticker link>`*:* Same as above
  • `/blstickermode <ban/tban/mute/tmute>`*:* sets up a default action on what to do if users use blacklisted stickers
 Note:
