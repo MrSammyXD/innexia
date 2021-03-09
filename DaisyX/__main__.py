@@ -86,6 +86,8 @@ buttons = [
 HELP_STRINGS = f"""
 *SETTINGS*
 ✪ Select one of the settings that you want to change!
+✪ Join Support Group @InnexiaSupport!
+""".format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
