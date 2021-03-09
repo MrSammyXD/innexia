@@ -368,15 +368,15 @@ def DaisyX_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🌝 How To Use Me 🌝", callback_data="aboutmanu_howto"
+                            text="How To Use Me", callback_data="aboutmanu_howto"
                         ),
                         InlineKeyboardButton(
-                            text="😶 T & C 😶", callback_data="aboutmanu_tac"
+                            text="T & C", callback_data="aboutmanu_tac"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="❔ Help ❔", callback_data="help_back"
+                            text="Help", callback_data="help_back"
                         )
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
@@ -512,7 +512,7 @@ def get_help(update, context):
                     [
                         [
                             InlineKeyboardButton(
-                                text="❗ Help ❗",
+                                text="Help",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -523,18 +523,18 @@ def get_help(update, context):
             )
             return
         update.effective_message.reply_text(
-            "🔥 Contact Me in PM For Help!",
+            "Contact Me in PM For Help!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="❗ Help ❗",
+                            text="Help",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="💠 Support 💠",
+                            text="Support",
                             url="https://t.me/{}".format(SUPPORT_CHAT),
                         )
                     ],
