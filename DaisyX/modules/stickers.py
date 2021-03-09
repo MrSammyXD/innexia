@@ -457,8 +457,8 @@ __help__ = """
 • `/kang`*:* reply to a sticker to add it to your pack.
 • `/stickers`*:* Find stickers for given term on combot sticker catalogue
 
-*BLACKLIST STICKERS -
-*NOTE:* Blacklist stickers do not affect the group admin
+*BLACKLIST STICKERS*
+
  • `/blsticker`*:* See current blacklisted sticker
 *Only admin:*
  • `/addblsticker <sticker link>`*:* Add the sticker trigger to the black list. Can be added via reply sticker
