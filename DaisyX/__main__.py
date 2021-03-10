@@ -63,7 +63,7 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello There, I'm [innexia](https://telegra.ph/file/7ed50dcd5c1346bb6dc47.jpg)
+Hello 👋 There, I'm [innexia](https://telegra.ph/file/c61e0caa74707d86aef70.jpg)
 
 An Advanced Telegram Group Management Bot For All Your Needs !!
 """
