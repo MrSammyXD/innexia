@@ -41,7 +41,7 @@ async def _(event):
                 end = datetime.now()
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
-                await h.edit("Uploaded to [𝙏𝙚𝙡𝙚𝙜𝙧𝙖.𝙥𝙝]({}) in {} seconds.".format(media_urls[0], (ms + ms_two)), link_preview=True)
+                await h.edit("𝙐𝙥𝙡𝙤𝙖𝙙𝙚𝙙 𝙩𝙤 https://telegra.ph{} 𝙞𝙣 {} 𝙨𝙚𝙘𝙤𝙣𝙙!".format(media_urls[0], (ms + ms_two)), link_preview=True)
         elif input_str == "t":
             user_object = await tbot.get_entity(r_message.sender_id)
             title_of_page = user_object.first_name # + " " + user_object.last_name
