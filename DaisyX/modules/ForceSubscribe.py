@@ -100,8 +100,6 @@ def _check_member(client, message):
             except UserNotParticipant:
                 try:
                     sent_message = message.reply_text(
-                        "message = message.reply_text(
-
                         "Hey  {} 🙏 \n \n **please join @{} Channel Join ** 😭 \n and press**UNMUTE ME** Button touch. \n \n **[👉 OUR CHANNEL 👈](https://t.me/{})**".format(
                             message.from_user.mention, channel, channel
                         ),
