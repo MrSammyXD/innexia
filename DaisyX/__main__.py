@@ -75,6 +75,16 @@ buttons = [
         InlineKeyboardButton(text="Help", callback_data="help_back"),
         
     ],
+
+    [
+        InlineKeyboardButton(
+            text="Support", url="t.me/Innexiasupport"
+        ),
+        InlineKeyboardButton(
+            text="News", url="t.me/InnexiaUpdate"
+        ),
+    ],
+
     [
         InlineKeyboardButton(
             text="Add Me", url="t.me/Innexiabot?startgroup=true"
