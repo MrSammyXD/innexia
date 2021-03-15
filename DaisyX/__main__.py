@@ -72,22 +72,22 @@ An Advanced Telegram Group Management Bot For All Your Needs !!
 
 buttons = [
     [
-        InlineKeyboardButton(text="Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Help & Commands ❔", callback_data="help_back"),
         
     ],
 
     [
         InlineKeyboardButton(
-            text="Support", url="t.me/Innexiasupport"
+            text="Support 🔧", url="t.me/Innexiasupport"
         ),
         InlineKeyboardButton(
-            text="News", url="t.me/InnexiaUpdate"
+            text="Updates 📢", url="t.me/InnexiaUpdates"
         ),
     ],
 
     [
         InlineKeyboardButton(
-            text="Add Me", url="t.me/Innexiabot?startgroup=true"
+            text="Add To Group 👥", url="t.me/Innexiabot?startgroup=true"
         ),
     ],
 ]
