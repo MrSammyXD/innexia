@@ -63,9 +63,16 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello 👋 There, I'm [innexia](https://telegra.ph/file/c61e0caa74707d86aef70.jpg)
+Hey there! my name is **innexia.** If you have any questions on how to use me, Click Help button.
 
-An Advanced Telegram Group Management Bot For All Your Needs !!
+I'm here to make your group management fun and easy[!](https://telegra.ph/file/57dc90b0a574ffdd0ce96.jpg)
+i have lots of handy features, such as flood control, a warning system, a note keeping system, and even replies on predetermined filters.
+
+Any issues or need help related to me? join our group [innexia support chat.](https://t.me/InnexiaSupport)
+
+Made with love by [them](https://t.me/TeamInnexia)
+
+Wanna Add me to your Group? Just click the button below!
 """
 
 
