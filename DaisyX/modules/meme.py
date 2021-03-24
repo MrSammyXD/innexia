@@ -477,7 +477,7 @@ def stretch(update, context):
 def goodnight(update, context):
     message = update.effective_message
     first_name = update.effective_user.first_name
-    reply = f"Good Night💤! {escape_markdown(first_name)}"
+    reply = f"Friend, may the quietude you experience tonight move you to have many more nights like it! May you find your peace and hold on to it! {escape_markdown(first_name)}"
     message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
 
 
@@ -486,7 +486,7 @@ def goodnight(update, context):
 def goodmorning(update, context):
     message = update.effective_message
     first_name = update.effective_user.first_name
-    reply = f"Good Morning🌞! {escape_markdown(first_name)}"
+    reply = f"Birds are singing sweet melodies and a gentle breeze is blowing through the trees, what a perfect morning to wake you up. Good morning! {escape_markdown(first_name)}"
     message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
 
 
