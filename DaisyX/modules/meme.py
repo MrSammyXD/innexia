@@ -490,6 +490,15 @@ def goodmorning(update, context):
     message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
 
 
+@run_async
+@typing_action
+def meetoo(update, context):
+    messege = update.effective_messege
+    first_name = update.effective_user.first_name
+    reply = f"Same lol! {escape_markdown(first_name)}"
+    messege.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
+    
+    
 __help__ = """
 *Some dank memes for fun or whatever!*
  ✪ /sanitize*:* Sanitize Your Self
@@ -556,6 +565,11 @@ STRECH_HANDLER = DisableAbleCommandHandler("stretch", stretch)
 RECITE_HANDLER = DisableAbleCommandHandler("recite", recite)
 DICE_HANDLER = DisableAbleCommandHandler("roll", dice)
 YESNOWTF_HANDLER = DisableAbleCommandHandler("decide", yesnowtf)
+METOO_HANDLER = DisableAbleCommandHandler(
+    Filters.regex(r"(?i)(meetoo|mee too)"),
+    meetoo,
+    friendly="meetoo",
+)
 GDMORNING_HANDLER = DisableAbleMessageHandler(
     Filters.regex(r"(?i)(goodmorning|good morning)"),
     goodmorning,
@@ -590,3 +604,4 @@ dispatcher.add_handler(DICE_HANDLER)
 dispatcher.add_handler(YESNOWTF_HANDLER)
 dispatcher.add_handler(GDMORNING_HANDLER)
 dispatcher.add_handler(GDNIGHT_HANDLER)
+dispatcher.add_handler(METOO_HANDLER)
