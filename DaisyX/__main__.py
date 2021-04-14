@@ -65,7 +65,7 @@ from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 PM_START_TEXT = """
 Heya 🤗❤️ I am `INNEXIA` your group super bot I am very fast and  more efficient ☺️ I provide awesome 😃 features which a owner will look for  filter ,warn system,note keeping system,flood, 
 
-If need help join innexia [support](https://t.me/InnexiaSupport)
+If need help join @InnexiaSupport
 
 Made with  😘💓 by @TeamInnexia and co.
 """
@@ -812,7 +812,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😹")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
