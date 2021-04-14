@@ -63,18 +63,12 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hey there! my name is **innexia.** If you have any questions on how to use me, Click Help button.
+Heya 🤗❤️ I am `INNEXIA` your group super bot I am very fast and  more efficient ☺️ I provide awesome 😃 features which a owner will look for  filter ,warn system,note keeping system,flood, 
 
-I'm here to make your group management fun and easy[!](https://telegra.ph/file/57dc90b0a574ffdd0ce96.jpg)
-i have lots of handy features, such as flood control, a warning system, a note keeping system, and even replies on predetermined filters.
+If need help join innexia [support](https://t.me/InnexiaSupport)
 
-Any issues or need help related to me? join our group [innexia support chat.](https://t.me/InnexiaSupport)
-
-Made with love by [them](https://t.me/TeamInnexia)
-
-Wanna Add me to your Group? Just click the button below!
+Made with  😘💓 by @TeamInnexia and co.
 """
-
 
 
 buttons = [
