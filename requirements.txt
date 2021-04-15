@@ -55,4 +55,4 @@ wget
 fake-useragent
 asyncio
 telegraph
-pyrogram
+
