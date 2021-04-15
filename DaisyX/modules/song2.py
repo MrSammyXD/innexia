@@ -5,7 +5,7 @@ import aiohttp
 import youtube_dl
 
 from pyrogram import filters
-from DaisyX import pgram
+from DaisyX import pyrogram
 from youtube_search import YoutubeSearch
 from DaisyX.pyrogramee.errors import capture_err
 
@@ -15,7 +15,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@pgram.on_message(filters.command(['sg']))
+@pyrogram.on_message(filters.command(['sg']))
 def song(client, message):
 
     user_id = message.from_user.id 
